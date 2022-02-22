@@ -5,7 +5,7 @@ from .forms import UserDeleteForm
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import DeleteView
-
+from .models import Profile
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -54,3 +54,4 @@ def deleteuser(request):
     }
 
     return render(request, 'users/delete_account.html', context)
+
