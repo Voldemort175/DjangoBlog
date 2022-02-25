@@ -19,8 +19,7 @@
             </fieldset> 
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Update</button>
-                <p>If you want to delete your profile , go to "/deleteuser/"</p>
-                <a href = "{% url 'user-delete' %}"><button class="btn btn-danger">Delete Profile</button></a>" 
+                <button class="btn btn-danger" type="submit"><a href = "{% url 'user-delete' %}">Delete Profile</a></button>
             </div>
        </form>
       </div>
